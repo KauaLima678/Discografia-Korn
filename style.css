@@ -217,6 +217,7 @@ img{
     flex-direction: column;
     width: 500px;
     color: whitesmoke;
+    text-align: center;
 }
 
 .membros-info strong{
