@@ -1,0 +1,496 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cabecario{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.cabecario a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.korn-logo img{
+    width: 100px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.cabecario-cont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    margin: 30px;
+}
+
+.Band{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Band img{
+    width: 100%;
+    height: 700px;
+    border-radius: 0;
+}
+
+.band-informs{
+    position: absolute;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.659);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-right: 30px;
+    flex-direction: column;
+}
+
+.band-informs h1{
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.band-informs p{
+    text-align: start;
+}
+
+.home{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+    
+    
+}
+
+body{
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+    border-radius: 25px;
+    border: transparent rgb(255, 255, 255) 5px;
+}
+
+.titulo {
+    position: relative;
+    left: -300px;
+    animation: tituloSlide 1s forwards;
+  }
+
+  @keyframes tituloSlide {
+    from {
+      left: -500px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+/* p{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+} */
+
+
+.discografia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    
+}
+.discos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Eventos{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    text-align: center;
+}
+
+.Histórico{
+    font-size: 25px;
+}
+
+.albuns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.album{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.album:nth-of-type(3){
+    font-size: 14px;
+}
+
+.album:nth-of-type(5){
+    font-size: 14px;
+}
+
+.album:nth-of-type(6){
+    font-size: 10px;
+}
+
+.album img{
+    width: 100%;
+    transform: translateX(0) scale(1);
+    transition: transform .5s;
+    box-shadow: 0px 0px 35px 1px #000000ce;
+    margin-top: 10px;
+}
+
+.mebros-tit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    font-size: 35px;
+} 
+
+.membros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.membros-card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(174, 174, 174, 0.09) 0px -3px 5px;
+    border: transparent;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-wrap: wrap;
+}
+
+.membros-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    color: whitesmoke;
+}
+
+.membros-info strong{
+    font-weight: 700;
+}
+
+.membros-info p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.membros-info h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.membros-card img{
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    transition: transform .5s;
+    transform: translateX(0) scale(1);
+} 
+
+.membros-card img:hover{
+    transform: translateX(0) scale(1.05);
+}
+
+.album img:hover,
+.album img:focus{
+    background: #e10000;
+    transform: translateX(0px) scale(1.1);
+}
+
+.eventos-cards{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 30px;
+    height: 500px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.eventos-cards h2{
+    margin-bottom: 20px;
+}
+
+.eventos-cards h3{
+    background-color: rgb(46, 46, 46);
+    border-radius: 10px;
+    padding: 10px;
+    border: #ffffff 2px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .eventos-cards h3 span:nth-of-type(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, transparent, rgb(255, 0, 0));
+    width: 100%;
+    height: 5px;
+    animation: animarBorda 2s linear infinite;
+}
+
+@keyframes animarBorda{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.eventos-cards h3 span:nth-of-type(2){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, transparent, rgb(255, 0, 0));
+    width: 100%;
+    height: 5px;
+    animation: animarBorda2 2s linear infinite;
+}
+
+@keyframes animarBorda2{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.eventos-cards h3 span:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, transparent, rgb(255, 0, 0));
+    width: 5px;
+    height: 100%;
+    animation: animarBorda3 1.5s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animarBorda3{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+.eventos-cards span:nth-of-type(4){
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent, rgb(255, 0, 0));
+    width: 5px;
+    height: 100%;
+    animation: animarBorda4 1.5s linear infinite;
+    animation-delay: 1s;
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
+}
+
+
+@keyframes animarBorda4{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+} */
+
+.fotos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+.fotos img{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.fotos img:nth-of-type(4){
+    height: 335px;
+}
+
+
+.Galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 35px;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.final{
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+}
+.titulo{
+    font-size: 45px;
+}
+.Redes{
+    text-align: center;
+    font-size: 35px;
+}
+.Histórico{
+    justify-content: center;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 70%;
+    margin-left: 235px;
+    align-items: center;
+}
+.discografia img{
+    width: 20%;
+}
+.disc{
+    font-size: 35px;
+}
+
+.final i{
+    width: 50px;
+    font-size: 35px;
+}
+
+a{
+    color: #9900ff;
+    transition: color 1s;
+}
+
+a:hover,
+a:focus{
+    color: #5f2784;
+}
+
+@keyframes discos{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.discos{
+    opacity: 0;
+    animation: discos 2s ease-in-out forwards;
+}
+
+.musicas{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.musicas h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.musicas li{
+    font-size: 25px;
+}
+
+.list a{
+    color: black;
+}
+
+@media (max-width: 730px){
+        .band-informs{
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+        }
+        .album{
+            width: 50%;
+            border: solid black 3px;
+            border-radius: 30px;
+        }
+        .Histórico{
+            font-size: 20px;
+            margin: 0 auto;
+        }
+        .Galeria img{
+            width: 100%;
+            border-radius: 0;
+        }
+        .cabecario{
+            flex-direction: column;
+            height: auto;
+        }
+        .cabecario-cont{
+            margin: 0 auto;
+        }
+}
