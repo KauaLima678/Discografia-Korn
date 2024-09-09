@@ -38,6 +38,14 @@
     margin: 30px;
 }
 
+.cabecario-cont a{
+    transition: 0.5s;
+}
+
+.cabecario-cont a:hover{
+    color: rgb(106, 106, 106);
+}
+
 .Band{
     position: relative;
     display: flex;
@@ -150,13 +158,19 @@ img{
     justify-content: space-evenly;
     gap: 16px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
+
+.disc h2{
+    margin-bottom: 400px;
+}
+
 .album{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 200px;
+    width: 180px;
     cursor: pointer;
     text-align: center;
 }
@@ -388,11 +402,6 @@ img{
     margin-top: 20px;
 }
 
-.final{
-    flex-wrap: wrap;
-    font-size: 20px;
-    text-align: center;
-}
 .titulo{
     font-size: 45px;
 }
@@ -417,20 +426,6 @@ img{
     font-size: 35px;
 }
 
-.final i{
-    width: 50px;
-    font-size: 35px;
-}
-
-a{
-    color: #9900ff;
-    transition: color 1s;
-}
-
-a:hover,
-a:focus{
-    color: #5f2784;
-}
 
 @keyframes discos{
     from{
@@ -494,4 +489,23 @@ a:focus{
         .cabecario-cont{
             margin: 0 auto;
         }
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    background-color: black;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    margin: 5px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+
 }
